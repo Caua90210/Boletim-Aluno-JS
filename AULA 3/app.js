@@ -14,6 +14,25 @@ var entradaDados = readline.createInterface({
     output: process.stdout
 });
 
+/**
+ * var = Permite criar uma variável no escopo Global do projeto
+ * let = Permite criar uma variável no escopo local do projeto (esta variavel irá existir somente dentro do seu bloco de programação)
+ * const = Permite criar um espaço em memórial para guardar um conteúdo que não sofrerá alteração e pode ser no escopo global ou local
+ * 
+ * Operadores de Comparação:
+ * 
+ *  == Permite verificar igualdade
+ *  < Permite verificar o menor valor
+ *  > Permite verificar o maior valor
+ *  <= Permite verificar o menor valor ou a igualdade
+ *  >= Permite verificar o maior valor ou a igualdade
+ *  != Permite verificar a diferença entre dois conteúdos
+ *  === Permite verificar a igualdade entre conteúdos e validar e a igualdade nos tipos de dados
+ *  !== Permite verificar a diferença de conteúdo e a igualdade de tipo de dados 
+ *
+ * 
+ */
+
 // Entrada de dados para o nome do aluno
 entradaDados.question('Digite o nome do aluno: ', function(nomeUsuario) {
 
@@ -54,7 +73,8 @@ entradaDados.question('Digite o nome do aluno: ', function(nomeUsuario) {
                             console.log('Notas: 1ª nota: ' + nota1 + ', 2ª nota: ' + nota2 + ', 3ª nota: ' + nota3 + ', 4ª nota: ' + nota4);
                             console.log('Média do Aluno: ' + media.toFixed(2)); // Limitando a 2 casas decimais
                             
-                            
+                            if(nota1 == '')
+
                             entradaDados.close();
                             
                             
